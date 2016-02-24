@@ -93,17 +93,21 @@ button {
 	width: 11px;
     height: 19px;
     position: absolute;
-    left: 50%;
+    left: 140%;
     margin: -10px 0 0 -6px;
     top: 50%;
     background-position: -20px -20px;
     opacity: 0.9;
     z-index: 2;
-    background: url("images/header_new.782d7ef85649.png") no-repeat;
-    background-size: 150px 100px;
+
     overflow: hidden;
     float: left;
     border: 0;
+}
+
+.Logo {
+    background: url("images/header_new.782d7ef85649.png") no-repeat;
+    background-size: 150px 100px;
 }
 
 #Logo a {
@@ -123,6 +127,54 @@ button {
     border: 0;
     margin: 0;
     z-index: 0;
+}
+
+.new {
+    display: inline-block;
+    font-size: 9px;
+    color: #4da4e0;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: -3px;
+    position: relative;
+}
+
+.hidden {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    width: auto;
+    position: static;
+}
+
+.MenuBurger:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 12px;
+    margin: -3px 0 0 0;
+    opacity: 0.45;
+    background-position: -40px -21px;
+    background-size: 150px 100px;
+    background-image: url('images/header_new.782d7ef85649.png');
+}
+
+.Loupe:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    opacity: 0.45;
+    height: 15px;
+    margin: -5px 0 0 0;
+    vertical-align: middle;
+    background-position: 0 -20px;
+    background-size: 150px 100px;
+    background-image: url('images/header_new.782d7ef85649.png');
+}
+
+.ListeDroite {
+    float: left;
 }
 
 .PageContainer {
