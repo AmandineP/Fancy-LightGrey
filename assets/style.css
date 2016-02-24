@@ -1,0 +1,450 @@
+body {
+	color: #373d48;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    cursor: default;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+    quotes: none;
+    font-style: normal;
+    outline: none;
+}
+
+header {
+	position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+    height: 47px;
+}
+
+a {
+
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: #4978b3;
+    cursor: pointer;
+}
+
+p {
+    padding: 0 0 10px 0;
+}
+
+button {
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+}
+
+#header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    border-bottom: 1px solid #22242C;
+    background: #373c4a;
+    height: 100%;
+    z-index: 2;
+}
+
+.Menu {
+    position: relative;
+    display: inline-block;
+    min-width: 970px;
+    text-align: left;
+    height: 47px;
+    vertical-align: top;
+    z-index: 2;
+    text-align: left;
+}
+
+.Menu a {
+  line-height: 47px;
+  padding: 0 10px 1px;
+  color: #9ea0a5;
+  height: auto;
+  font-weight: 500;
+}
+
+.MenuDroite {
+	float: right;
+	font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+.MenuGauche {
+	float: left;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+#Logo {
+	width: 11px;
+    height: 19px;
+    position: absolute;
+    left: 50%;
+    margin: -10px 0 0 -6px;
+    top: 50%;
+    background-position: -20px -20px;
+    opacity: 0.9;
+    z-index: 2;
+    background: url("images/header_new.782d7ef85649.png") no-repeat;
+    background-size: 150px 100px;
+    overflow: hidden;
+    float: left;
+    border: 0;
+}
+
+#Logo a {
+    display: block;
+    width: 91px;
+    height: 20px;
+    padding: 0;
+    text-indent: -1000em;
+    overflow: hidden;
+    cursor: default;
+}
+
+.ListeGauche {
+    position: static;
+    float: left;
+    height: 48px;
+    border: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.PageContainer {
+    float: left;
+    width: 100%;
+}
+
+#Page {
+    width: 970px;
+    top: 0;
+    position: relative;
+    margin: 0 auto;
+    padding: 68px 0 0;
+}
+
+.Page {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.ContenantGauche {
+    float: left;
+    width: 648px;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+
+.Wrapper {
+    margin-bottom: 18px;
+
+    position: relative;
+    background: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 0px 0px #D0D1D5, 0 0px 0px 1px rgba(220, 221, 224, 0.7);
+    -webkit-box-shadow: 0 1px 0px 0px #D0D1D5, 0 0px 0px 1px rgba(220, 221, 224, 0.7);
+    -moz-box-shadow: 0 1px 0px 0px #D0D1D5, 0 0px 0px 1px rgba(220, 221, 224, 0.7);
+}
+
+.ImageItem {
+    width: auto;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+}
+
+.ImageItem figure {
+    display: block;
+    margin: 4px;
+    height: 640px;
+    width: 640px;
+    background: #F0F0F0;
+}
+
+.ImageItem figure span.Image {
+    height: 640px;
+    width: 640px;
+}
+
+.ImageItem figure .Image {
+    border-radius: 0;
+    background: 50% 50% no-repeat #F0F0F0;
+    text-align: center;
+    background-size: contain;
+    overflow: hidden;
+    height: 640px;
+    width: 640px;
+    background-image: url('images/1001828740998632171_153d63c594ca.jpg');
+
+    position: relative;
+    width: 210px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #8a8f9c;
+}
+
+.ImageDetails {
+    position: relative;
+    border-top: 1px solid #f0f1f2;
+}
+
+.ListeImagesDetails {
+    float: left;
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.ListeImagesDetails .after {
+    padding: 7px;
+}
+
+.ListeImagesDetails .after .current {
+    float: left;
+    vertical-align: top;
+    margin: 8px 0 0 8px;
+    height: 50px;
+}
+
+.ListeImagesDetails .after .current .active {
+    box-shadow: inset 0 0 0 2px rgba(62,133,205,0.75);
+    background-image: url('images/1001828740998632171_153d63c594ca(1).jpg');
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+.Description {
+    float: right;
+    width: 433px;
+    padding: 15px 15px 20px 0;
+}
+
+.Description .Details {
+    position: relative;
+    font-size: 13px;
+    line-height: 19px;
+    color: #383d48;
+    max-height: 175px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+h4 .Titre {
+  padding-bottom: 5px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.Description .Details p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #383d48;
+}
+
+.Description .after li {
+    float: left;
+    width: 100%;
+    line-height: 17px;
+    border-bottom: 1px solid #f0f0f2;
+    padding: 7px 0;
+}
+
+.Description .after li label {
+    float: left;
+}
+
+.Description .after li span {
+    float: right;
+    color: #383d48;
+    width: 285px;
+}
+
+.Description .after .Police {
+    border-bottom: 0;
+}
+
+.Description .after .Police span a {
+    text-decoration: none;
+    color: #4978b3;
+    cursor: pointer;
+}
+
+.SlideDroite {
+    float: right;
+    width: 303px;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.Infos {
+    position: relative;
+}
+
+.Infos h3 {
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 16px 15px 5px;
+}
+
+.Infos p.Prix {
+    padding: 5px 15px 0;
+}
+
+.Infos p.Prix big {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Infos p.Prix big small {
+    font-size: 15px;
+    font-weight: normal;
+    color: #383d48;
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 1px;
+    margin-left: 5px;
+}
+
+.Infos p.Prix span {
+    padding: 4px 0 3px;
+    color: #8a8f9c;
+    font-size: 11px;
+}
+
+.Infos .FormeAchat {
+    padding: 6px 15px 0;
+    position: relative;
+}
+
+.FormeAchat .btns-green-embo {
+    color: #4978b3;
+    font-size: 12px;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F2;
+    box-shadow: none;
+    border-radius: 3px;
+    padding: 2px 0 0 0;
+    margin-top: -5px;
+}
+
+.FormeAchat p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.FormeAchat .AchatItem p label {
+    display: block;
+    color: #8a8f9c;
+    font-size: 12px;
+    padding: 7px 0 6px;
+}
+
+.AchatItem .trick-select {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.AchatItem .trick-select option {
+    width: 185px;
+    margin-right: 7px;
+}
+
+.AchatItem .trick-select .selectBox {
+    opacity: 1;
+    display: block;
+    line-height: 30px;
+    border-color: #d1d5d7;
+    color: #373d48;
+    padding: 0;
+}
+
+
+
+.selectBox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #D0D2D3;
+    border-bottom-color: #CED0D2;
+    box-shadow: 0 1px 0 #F2F2F2;
+    border-radius: 3px;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 18px;
+    text-shadow: none;
+    background: #F8F8F8;
+    box-shadow: none;
+}
+
+.FormeAchat .AchatItem button {
+    display: block;
+    width: 274px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 35px;
+    height: auto;
+}
+
+.btns-green-embo {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 13px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #568342;
+    border-top-color: #588446;
+    border-bottom-color: #3e6b32;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: -moz-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: -o-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: -ms-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: linear-gradient(to bottom,#75ad5e,#639b4e);
+    height: 30px;
+    line-height: 28px;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.20);
+}
+
+.Sommaire {
+  z-index: 9;
+  position: fixed;
+  top: -17px;
+  opacity: 0;
+  transition: 0.2s;
+  left: 50%;
+  width: 970px;
+  margin-left: -485px;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.2), 0 0px 3px 1px rgba(0, 0, 0, 0.03), 0 0px 1px 0px rgba(0, 0, 0, 0.04);
+  height: 59px;
+}
