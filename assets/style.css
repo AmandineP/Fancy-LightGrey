@@ -210,10 +210,18 @@ button {
     width: 14px;
     height: 12px;
     margin: -3px 0 0 0;
-    opacity: 0.45;
     background-position: -40px -21px;
     background-size: 150px 100px;
     background-image: url('images/header_new.782d7ef85649.png');
+}
+
+.MenuBurger {
+    opacity: 0.45;
+}
+
+.MenuBurger:hover {
+    opacity: 0.85;
+    transition: 0.15s ease-in-out;
 }
 
 .Burger {
@@ -248,7 +256,6 @@ button {
     content: '';
     display: inline-block;
     width: 14px;
-    opacity: 0.45;
     height: 15px;
     margin: -5px 0 0 0;
     vertical-align: middle;
@@ -257,8 +264,13 @@ button {
     background-image: url('images/header_new.782d7ef85649.png');
 }
 
+.Loupe {
+    opacity: 0.45;
+}
+
 .Loupe:hover {
-    opacity: 1;
+    opacity: 0.85;
+    transition: 0.15s ease-in-out;
 }
 
 .ListeDroite {
@@ -650,6 +662,137 @@ h4 .Titre {
     line-height: 28px;
     border-radius: 3px;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.20);
+}
+
+.FigureButton {
+    position: relative;
+    clear: both;
+    padding: 15px 14px 15px 15px;
+    margin: 0 -15px;
+    border-top: 1px solid #f1f1f2;
+}
+
+.button {
+    float: right;
+}
+
+.ButtonStatic {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 1px 10px 0;
+    line-height: 29px;
+    font-size: 12px;
+    border: 1px solid;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
+    border-radius: 3px;
+    margin: 0 3px 0 0;
+    width: auto;
+}
+
+a.fancyd_list {
+    margin-left: 2px;
+    box-shadow: none;
+    background: #fafafa;
+    font-weight: normal;
+    text-shadow: none;
+    padding: 2px 9px 0;
+    display: inline-block;
+    line-height: 28px;
+    border: 1px solid #dedfe0;
+    color: #969AA5;
+    border-radius: 3px;
+    vertical-align: middle;
+    position: relative;
+}
+
+#more-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    margin: 0;
+    background-color: transparent;
+}
+
+#more-menu .button {
+    margin: 0 0 0 7px;
+    float: right;
+}
+
+.button.share {
+    width: 32px;
+    padding: 1px 0 0;
+    text-align: center;
+}
+
+.button.share:before {
+    background-position: -35px -40px;
+    opacity: 0.9;
+}
+
+.button.add-list:before {
+    opacity: 0.9;
+    background-position: 0 -40px;
+}
+
+.ButtonStatic:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-top: -3px;
+    opacity: 0.8;
+    background: url("../../images/normal/shop_buttons.ae44e16223ce.png") no-repeat;
+    background-size: 50px 50px;
+}
+
+.TitreProvenance {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #383d48;
+    line-height: 18px;
+    padding: 16px 15px 16px 60px;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    padding-left: 65px;
+}
+
+.Provenance .TitreProvenance img {
+    width: 40px;
+    height: 40px;
+    left: 15px;
+    margin-top: -20px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    position: absolute;
+}
+
+.Provenance ul.after {
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.Provenance.Follow {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+
+.Provenance a.ask {
+    display: block;
+    font-weight: bold;
+    border-top: 1px solid #f1f1f2;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .Sommaire {
