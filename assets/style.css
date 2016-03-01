@@ -188,6 +188,88 @@ button {
     box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
 }
 
+.Shop .Parcourir span {
+    padding: 19px 20px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Shop ul {
+    float: left;
+    color: #383d48;
+
+    border-top: 1px solid #f0f0f2;
+    position: relative;
+}
+
+.Shop a {
+    border-radius: 0;
+    display: block;
+    min-height: 0;
+    padding: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    line-height: 26px;
+    color: #767a88;
+    background: none;
+}
+
+.Shop:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.Shop a:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
+    pointer-events: none;
+}
+
+.Parcourir div {
+    float: left;
+    padding: 0 0 3px;
+    border: 0;
+    width: 191px;
+}
+
+.Editors {
+    float: left;
+    padding: 0 0 3px;
+    border: 0;
+    width: 191px;
+}
+
+.Collections span {
+    padding: 19px 20px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Collections:not(span) {
+    position: relative;
+    padding: 7px 5px 14px;
+}
+
+.Collections:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+}
+
+.Shop .Alaffiche {
+    float: right;
+    padding: 0 15px 0 0;
+}
+
 .Store {
     display: block;
     visibility: hidden;
