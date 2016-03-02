@@ -253,7 +253,7 @@ button {
     font-size: 12px;
 }
 
-.Collections:not(span) {
+.Collections div {
     position: relative;
     padding: 7px 5px 14px;
 }
@@ -851,15 +851,41 @@ a.fancyd_list {
     width: 40px;
     height: 40px;
     left: 15px;
-    margin-top: -20px;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
     border-radius: 3px;
     position: absolute;
+    background-image: url('images/fancy_saleitemsellerlogo_18587_6715a80d05a5.jpg');
+    background-size: cover;
 }
 
 .Provenance ul.after {
     padding: 0 15px;
     overflow: hidden;
+}
+
+.TitreProvenance:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-position: -60px 0;
+    right: 16px;
+    top: 50%;
+    margin-top: -7px;
+    opacity: 0.5;
+}
+
+.TitreProvenance b:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#FFFFFF);
+    background: -ms-linear-gradient(left,rgba(255,255,255,0),#FFFFFF);
+    background: -moz-linear-gradient(left,rgba(255,255,255,0),#FFFFFF);
+    background: -o-linear-gradient(left,rgba(255,255,255,0),#FFFFFF);
+    height: 100%;
 }
 
 .Provenance.Follow {
@@ -877,6 +903,154 @@ a.fancyd_list {
     font-size: 12px;
 }
 
+.Provenance a small {
+    display: block;
+    color: #8a8f9c;
+    font-size: 12px;
+}
+
+.Follow {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+    width: 47px;
+    height: 30px;
+    text-indent: -1000em;
+}
+
+.Boutons {
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 0 1px 0 #FFF;
+    font-weight: bold;
+    padding: 0 12px;
+    line-height: 28px;
+    font-size: 13px;
+    border: 1px solid;
+    border-radius: 3px;
+    color: #5A616F;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: #CCCED2 #CDCED0 #B6B7B9;
+    background: #F4F4F5;
+    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
+}
+
+.Follow:before {
+    background-position: 0 -37px;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -12px;
+    background-image: url('images/follow_button.77003bd0b205.png');
+    background-size: 25px 86px;
+}
+
+.MoreInfo li {
+    float: none;
+    padding: 0;
+    border-top: 1px solid #f0f1f2;
+}
+
+.MoreInfo:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.LienMoreInfo {
+    padding-left: 15px;
+    padding-right: 40px;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #383d48;
+    line-height: 18px;
+    padding: 16px 16px;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.MoreInfo li a small {
+    display: block;
+    color: #8a8f9c;
+    font-size: 12px;
+}
+
+.MoreInfo li a b {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.LienMoreInfo:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-position: -60px 0;
+    right: 16px;
+    top: 50%;
+    margin-top: -7px;
+    opacity: 0.5;
+    background-image: url('images/arrow_things.9a77ec32349b.png');
+    background-size: 100px 100px;
+}
+
+.Signalement {
+    margin-top: -5px;
+    font-size: 12px;
+}
+
+.Signalement a {
+    display: block;
+    padding-bottom: 5px;
+    color: #b1b3ba;
+}
+
+.ContenantBas {
+    clear: both;
+}
+
+.Tableau {
+    padding: 20px 0 26px;
+    color: #898d94;
+    font-size: 15px;
+}
+
+.Tableau li {
+    float: left;
+    margin-right: 28px;
+    font-weight: bold;
+}
+
+.Tableau li .Objet {
+    color: #5b626d;
+    opacity: 1;
+}
+
+.Tableau li .Recent {
+    color: #898d94;
+    opacity: 0.7;
+}
+
+.Tableau:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
 .Sommaire {
   z-index: 9;
   position: fixed;
@@ -890,4 +1064,27 @@ a.fancyd_list {
   border-radius: 0 0 3px 3px;
   box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.2), 0 0px 3px 1px rgba(0, 0, 0, 0.03), 0 0px 1px 0px rgba(0, 0, 0, 0.04);
   height: 59px;
+}
+
+.ScrollHaut {
+    position: fixed;
+    display: none;
+    bottom: 12px;
+    right: 12px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 12px;
+    background: #d6d8db;
+    color: #7f8184;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 9;
+}
+
+.ScrollHaut span {
+    font-size: 12px;
+    padding: 0;
+    color: #7f8184;
+    background: none;
+    text-shadow: none;
 }
