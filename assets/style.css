@@ -26,7 +26,7 @@ header {
 
 a {
 
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica;
     list-style: none;
     text-decoration: none;
     color: #4978b3;
@@ -179,12 +179,9 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     border-radius: 0 0 3px 3px;
     background-color: #fff;
     z-index: 0;
-    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
-    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
     box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
 }
 
@@ -194,15 +191,40 @@ button {
     font-size: 12px;
 }
 
+.Store span {
+    padding: 19px 20px 0;
+    font-weight: bold;
+    font-size: 12px;  
+}
+
 .Shop ul {
     float: left;
     color: #383d48;
+    border-top: 1px solid #f0f0f2;
+    position: relative;
+}
 
+.Store ul {
+    float: left;
+    color: #383d48;
     border-top: 1px solid #f0f0f2;
     position: relative;
 }
 
 .Shop a {
+    border-radius: 0;
+    display: block;
+    min-height: 0;
+    padding: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    line-height: 26px;
+    color: #767a88;
+    background: none;
+}
+
+.Store a {
     border-radius: 0;
     display: block;
     min-height: 0;
@@ -265,6 +287,11 @@ button {
     height: 0;
 }
 
+.Shop {
+    width: 970px;
+    height: 214px;
+}
+
 .Shop .Alaffiche {
     float: right;
     padding: 0 15px 0 0;
@@ -276,13 +303,15 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     border-radius: 0 0 3px 3px;
     background-color: #fff;
     z-index: 0;
-    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
-    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
     box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
+}
+
+.Store {
+    width: 970px;
+    height: 214px;
 }
 
 .MenuBurger:before {
@@ -359,11 +388,48 @@ button {
     float: left;
 }
 
+.Langue {
+    right: 0;
+}
+
+.Langue ul {
+    float: left;
+    width: 100%;
+    padding: 8px 0 7px;
+    border: 0;
+    border-top: 1px solid #f0f0f2;
+    position: relative;
+    border-top: 0;
+}
+
 .Langue ul li {
     float: left;
     width: 50%;
     margin-top: -1px;
     font-size: 13px;
+}
+
+.Langue ul li a {
+    line-height: 26px;
+    color: #767a88;
+    min-height: 0;
+    padding: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    font-size: 13px;
+}
+
+.Langue ul li a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
+    pointer-events: none;
 }
 
 .LangueActuelle:after {
@@ -390,6 +456,7 @@ button {
     background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
     pointer-events: none;
 }
+
 
 .PageContainer {
     float: left;
