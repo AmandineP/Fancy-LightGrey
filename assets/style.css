@@ -191,11 +191,6 @@ button {
     font-size: 12px;
 }
 
-.Store span {
-    padding: 19px 20px 0;
-    font-weight: bold;
-    font-size: 12px;  
-}
 
 .Shop ul {
     float: left;
@@ -355,6 +350,22 @@ button {
     z-index: 11;
 }
 
+.Burger ul li:hover {
+    background-color: #EAEAEA;
+    cursor: pointer;
+    color: #3f444f;
+}
+
+
+.Burger ul li a:hover {
+    color: #3f444f;
+}
+
+#MenuBurger:hover .Burger {
+    visibility: visible;
+    opacity: 1;
+}
+
 .trick {
     position: fixed;
     width: 100%;
@@ -392,6 +403,7 @@ button {
     right: 0;
 }
 
+
 .Langue ul {
     float: left;
     width: 100%;
@@ -427,8 +439,6 @@ button {
     right: 0;
     width: 40px;
     height: 100%;
-    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
     pointer-events: none;
 }
 
@@ -452,11 +462,37 @@ button {
     right: 0;
     width: 40px;
     height: 100%;
-    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
     pointer-events: none;
 }
 
+.Langue .Selection {
+    font-weight: bold;
+    color: #383d48;
+}
+
+.Langue ul li:hover {
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
+.Langue ul li a:hover {
+    color: #3f444f;
+}
+
+#MenuLangue:hover .Langue {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ListeDroite a:hover {
+    color: #e2e2e2;
+    transition: 0.15s ease-in-out;
+}
+
+.LangueActuelle:after :hover {
+    opacity: 0.85;
+    transition: 0.15s ease-in-out;
+}
 
 .PageContainer {
     float: left;
