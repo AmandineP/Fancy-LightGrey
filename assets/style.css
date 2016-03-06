@@ -168,6 +168,22 @@ button {
     visibility: visible;
 }
 
+.Fond {
+    background-color: #303339;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: fixed;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.ListeGauche:hover .Fond {
+    visibility: visible;
+    opacity: 0.4;
+}
+    
 .new {
     display: inline-block;
     font-size: 9px;
