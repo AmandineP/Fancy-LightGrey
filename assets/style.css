@@ -329,12 +329,10 @@ button {
     background-color: #fff;
     z-index: 0;
     box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.1);
-}
-
-.Store {
     width: 970px;
     height: 214px;
 }
+
 
 .MenuBurger:before {
     content: '';
@@ -937,6 +935,84 @@ a.fancyd_list {
     float: right;
 }
 
+
+#more-menu button {
+    height: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 1px 10px 0;
+    line-height: 29px;
+    font-size: 12px;
+    border: 1px solid;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: #F4F4F5;
+    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
+    background: -ms-linear-gradient(top,#FFFFFF,#F6F7F8);
+    background: -moz-linear-gradient(top,#FFFFFF,#F6F7F8);
+    background: -o-linear-gradient(top,#FFFFFF,#F6F7F8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#F6F7F8');
+    border-radius: 3px;
+    margin: 0 3px 0 0;
+    width: auto;
+}
+
+#more-menu .share {
+    width: 32px;
+    padding: 1px 0 0;
+    text-align: center;
+}
+
+#more-menu .share b {
+    display: none;
+}
+
+#more-menu .add-list b {
+    display: inline;
+    padding-left: 4px;
+    font-size: 12px;
+    color: #6A707D;
+}
+
+#more-menu button small {
+    display: none;
+}
+
+#more-menu button:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-top: -3px;
+    opacity: 0.8;
+    background-size: 50px 50px;
+    background-image: url('images/shop_buttons.21421f08fb77.png');
+    width: 10px;
+    background-position: -190px -130px;
+
+    top: 50%;
+    right: 13px;
+    height: 10px;
+    margin-top: -5px;
+}
+
+#more-menu .add-list:before {
+    opacity: 0.9;
+    background-position: 0 -40px;
+}
+
+#more-menu .share:before {
+    background-position: -35px -40px;
+    opacity: 0.9;
+    width: 14px;
+}
+
 .button.share {
     width: 32px;
     padding: 1px 0 0;
@@ -960,8 +1036,14 @@ a.fancyd_list {
     position: static;
     margin-top: -3px;
     opacity: 0.8;
-    background: url("../../images/normal/shop_buttons.ae44e16223ce.png") no-repeat;
+    background: url("images/shop_buttons.21421f08fb77.png") no-repeat;
     background-size: 50px 50px;
+
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    vertical-align: middle;
+    margin: -3px 6px 0 0;
 }
 
 .TitreProvenance {
