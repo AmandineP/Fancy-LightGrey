@@ -155,7 +155,7 @@ button {
     z-index: 0;
 }
 
-.ListeGauche a:hover {
+.ListeGauche .TitreMenuGauche:hover {
     color: #e2e2e2;
     transition: 0.15s ease-in-out;
 }
@@ -202,6 +202,8 @@ button {
     position: static;
 }
 
+/*-----------------------------Debut de Shop-----------------------------*/
+
 .Shop {
     display: block;
     visibility: hidden;
@@ -214,7 +216,7 @@ button {
 }
 
 .Shop .Parcourir span {
-    padding: 19px 20px 0;
+    padding: 19px 15px 0;
     font-weight: bold;
     font-size: 12px;
 }
@@ -223,16 +225,11 @@ button {
 .Shop ul {
     float: left;
     color: #383d48;
-    border-top: 1px solid #f0f0f2;
+    border-right: 1px solid #f0f0f2;
     position: relative;
+    padding-top: 20px;
 }
 
-.Store ul {
-    float: left;
-    color: #383d48;
-    border-top: 1px solid #f0f0f2;
-    position: relative;
-}
 
 .Shop a {
     border-radius: 0;
@@ -247,40 +244,8 @@ button {
     background: none;
 }
 
-.Store a {
-    border-radius: 0;
-    display: block;
-    min-height: 0;
-    padding: 0 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    line-height: 26px;
-    color: #767a88;
-    background: none;
-}
-
-.Shop:after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
-.Shop a:hover:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 100%;
-    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0) 60%, white 90%);
-    pointer-events: none;
-}
-
 .Parcourir div {
-    float: left;
-    padding: 0 0 3px;
+    padding: 7px 0 3px;
     border: 0;
     width: 191px;
 }
@@ -315,10 +280,67 @@ button {
     height: 214px;
 }
 
+.Shop:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
 .Shop .Alaffiche {
     float: right;
-    padding: 0 15px 0 0;
+    padding: 20px 15px 0 0;
 }
+
+.Shop .Alaffiche div {
+    position: relative;
+    padding: 7px 5px 0px 0px;
+    padding-bottom: 0;
+}
+
+.Shop .Alaffiche div ul {
+    border-top: 1px solid #f0f0f2;
+    position: relative;
+    float: left;
+    padding: 0 0 3px;
+    border: 0;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 350px;
+}
+
+.Shop .Alaffiche div ul li {
+    float: left;
+}
+
+.Shop .Alaffiche div ul li a {
+    background: none;
+    opacity: 1;
+    color: #60646d;
+    padding: 0 0 0 15px;
+}
+
+.Shop .Alaffiche div ul li a img {
+    display: block;
+    background: no-repeat 50% 50% #f9f9f9;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12);
+    width: 160px;
+    height: 120px;
+    margin-bottom: 2px;
+}
+
+.Alaffiche {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.ListeGauche .Shop a:hover {
+    color: #35393f;
+    transition: 0.15s ease-in-out;
+}
+
+/*-----------------------------Fin de Shop - Debut de Store-----------------------------*/
 
 .Store {
     display: block;
@@ -333,6 +355,111 @@ button {
     height: 214px;
 }
 
+.Store a {
+    border-radius: 0;
+    display: block;
+    min-height: 0;
+    padding: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    line-height: 26px;
+    color: #767a88;
+    background: none;
+}
+
+.Store ul {
+    float: left;
+    color: #383d48;
+    border-right: 1px solid #f0f0f2;
+    position: relative;
+    padding-top: 20px;
+}
+
+.FeaturedStores {
+    width: 191px;
+}
+
+.FeaturedStores span {
+    padding: 19px 15px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.FeaturedStores div {
+    padding: 7px 0 3px;
+    border: 0;
+}
+
+.Gessato {
+    width: 191px;
+}
+
+.NewStores {
+    width: 201px;
+}
+
+.NewStores span {
+    padding: 19px 20px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.NewStores div {
+    position: relative;
+    padding: 7px 5px 14px;
+}
+
+.Store .Alaffiche {
+    float: right;
+    padding: 20px 15px 0 0;
+}
+
+.Store .Alaffiche div {
+    position: relative;
+    padding: 7px 5px 0px 0px;
+    padding-bottom: 0;
+}
+
+.Store .Alaffiche div ul {
+    border-top: 1px solid #f0f0f2;
+    position: relative;
+    float: left;
+    padding: 0 0 3px;
+    border: 0;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 350px;
+}
+
+.Store .Alaffiche div ul li {
+    float: left;
+}
+
+.Store .Alaffiche div ul li a {
+    background: none;
+    opacity: 1;
+    color: #60646d;
+    padding: 0 0 0 15px;
+}
+
+.Store .Alaffiche div ul li a img {
+    display: block;
+    background: no-repeat 50% 50% #f9f9f9;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12);
+    width: 160px;
+    height: 120px;
+    margin-bottom: 2px;
+}
+
+.ListeGauche .Store a:hover {
+    color: #35393f;
+    transition: 0.15s ease-in-out;
+}
+
+/*-----------------------------Fin de Store-----------------------------*/
 
 .MenuBurger:before {
     content: '';
@@ -391,6 +518,8 @@ button {
     opacity: 1;
 }
 
+/*-----------------------------Fin du Menu Burger-----------------------------*/
+
 .trick {
     position: fixed;
     width: 100%;
@@ -419,6 +548,8 @@ button {
     opacity: 0.85;
     transition: 0.15s ease-in-out;
 }
+
+/*-----------------------------Fin de Loupe-----------------------------*/
 
 .ListeDroite {
     float: left;
@@ -518,6 +649,12 @@ button {
     opacity: 0.85;
     transition: 0.15s ease-in-out;
 }
+
+/*-----------------------------Fin de Langue-----------------------------*/
+
+/*-----------------------------Fin de Header-----------------------------*/
+
+/*-----------------------------Debut Container Page-----------------------------*/
 
 .PageContainer {
     float: left;
