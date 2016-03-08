@@ -1354,6 +1354,18 @@ a.fancyd_list {
     background-size: 100px 100px;
 }
 
+.LienMoreInfo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -5px 0 20px #fff;
+}
+}
+
 .Signalement {
     margin-top: -5px;
     font-size: 12px;
@@ -1363,6 +1375,7 @@ a.fancyd_list {
     display: block;
     padding-bottom: 5px;
     color: #b1b3ba;
+    font-size: 12px;
 }
 
 .ContenantBas {
@@ -1607,6 +1620,35 @@ figcaption .figure-detail .Nom a {
     left: -8px;
     border-right-color: #fafafa;
     border-width: 4px;
+}
+
+.Sommaire .quick_menu {
+    visibility: visible;
+    opacity: 0;
+    clear: both;
+}
+
+.Sommaire .quick_menu li {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Sommaire .quick_menu li:first-child {
+    margin-left: 2px;
+}
+
+.Sommaire .quick_menu a {
+    color: #A4A8AE;
+    font-size: 15px;
+    padding: 21px 14px;
+    display: block;
+    line-height: 17px;
+}
+
+.Sommaire .quick_menu a.current {
+    color: #5b626d;
+    opacity: 1;
 }
 
 .ScrollHaut {
