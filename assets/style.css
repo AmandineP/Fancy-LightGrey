@@ -1449,6 +1449,7 @@ a.fancyd_list {
 
 .image {
     position: relative;
+    padding: 0 0 8px;
     width: 210px;
     font-size: 13px;
     line-height: 15px;
