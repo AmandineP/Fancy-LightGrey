@@ -734,6 +734,25 @@ button {
     color: #8a8f9c;
 }
 
+.ImageItem .PinIt {
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    opacity: 1;
+    display: none;
+    cursor: pointer;
+    border: none;
+    top: 10px;
+    left: 10px;
+    background-image: url('images/pinit.png');
+    background-color: transparent;
+    background-size: 40px 20px;
+}
+
+.ImageItem:hover .PinIt {
+    display: block; 
+}
+
 .ImageDetails {
     position: relative;
     border-top: 1px solid #f0f1f2;
@@ -1538,6 +1557,7 @@ figcaption .figure-detail .Nom a {
     border-radius: 0 0 3px 3px;
     box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.2), 0 0px 3px 1px rgba(0, 0, 0, 0.03), 0 0px 1px 0px rgba(0, 0, 0, 0.04);
     height: 59px;
+    display: none;
 }
 
 .Sommaire h3 {
