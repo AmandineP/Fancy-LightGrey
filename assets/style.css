@@ -292,6 +292,10 @@ button {
     padding: 20px 15px 0 0;
 }
 
+.Shop .sale {
+    color: #b83838;
+}
+
 .Shop .Alaffiche div {
     position: relative;
     padding: 7px 5px 0px 0px;
