@@ -1767,7 +1767,9 @@ figcaption .figure-detail .Nom a {
     opacity: 1;
 }
 
-
+.ScrollFond {
+    background: #000;
+}
 
 .ScrollHaut {
     position: fixed;
