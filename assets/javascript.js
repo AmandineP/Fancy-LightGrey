@@ -13,7 +13,7 @@ $(function(){
 //Fonction pour faire remonter la page en haut//
 $(document).ready( function () {
     
-    $('body').append('<div id="scrollToTop" title="Retour en haut">&nbsp;</div>');
+    $('body').append('<div id="scrollToTop" title="Retour en haut" style="background: #373d48;"></div>');
     
     
     $('#scrollToTop').click( function() {
