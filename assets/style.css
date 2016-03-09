@@ -168,6 +168,11 @@ button {
     visibility: visible;
 }
 
+.ListeGauche:hover .Fond {
+    visibility: visible;
+    opacity: 0.4;
+}
+
 .Fond {
     background-color: #303339;
     opacity: 0;
@@ -179,11 +184,7 @@ button {
     transition: opacity 0.15s ease-in-out;
 }
 
-.ListeGauche:hover .Fond {
-    visibility: visible;
-    opacity: 0.4;
-}
-    
+   
 .new {
     display: inline-block;
     font-size: 9px;
@@ -454,7 +455,7 @@ button {
     margin-bottom: 2px;
 }
 
-.ListeGauche .Store .TitreMenuGauche:hover {
+.ListeGauche .Store a:hover {
     color: #35393f;
     transition: 0.15s ease-in-out;
 }
@@ -1383,7 +1384,8 @@ a.fancyd_list {
     background: #fff;
     box-shadow: -5px 0 20px #fff;
 }
-}
+
+/*----------Fin de Slide de droite et de  More Info - Debut de Signalement--------------*/
 
 .Signalement {
     margin-top: -5px;
@@ -1396,6 +1398,8 @@ a.fancyd_list {
     color: #b1b3ba;
     font-size: 12px;
 }
+
+/*-----------------Fin de signalement - Debut de Contenant Bas--------------------*/
 
 .ContenantBas {
     clear: both;
@@ -1544,6 +1548,98 @@ figcaption .figure-detail .Nom a {
 
 }
 
+.image figure .fancy {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 1px 10px 0;
+    line-height: 29px;
+    font-size: 12px;
+    border: 1px solid;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: #F4F4F5;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#F6F7F8');
+    border-radius: 3px;
+    margin: 0 3px 0 0;
+    width: auto;
+    float: left;
+    top: 6px;
+    right: -6px;
+}
+
+.image figure .fancy:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-top: -3px;
+    opacity: 0.8;
+    background: url("images/shop_buttons.21421f08fb77.png") no-repeat;
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    vertical-align: middle;
+    margin: -3px 6px 0 0;
+}
+
+.image .buttons button {
+    width: 32px;
+    padding: 1px 0 0;
+    text-align: center;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 29px;
+    font-size: 12px;
+    border: 1px solid;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: #F4F4F5;
+    border-radius: 3px;
+    margin: 0 3px 0 0;
+    float: right;
+}
+
+.image .buttons button:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    background-size: 50px 50px;
+    background-image: url('images/shop_buttons.21421f08fb77.png');
+    top: 50%;
+    right: 13px;
+    height: 10px;
+    background-position: -35px -40px;
+    opacity: 0.9;
+    width: 14px;
+    margin-top: -5px;
+}
+
+.BtnShare {
+    top: -268px;
+    left: -5px;
+}
+
+.BtnHover {
+    opacity: 0;
+}
+
+.image:hover .BtnHover{
+    opacity: 1;
+}
+
+/*------------Fin de Contenant Bas - Debut de Sommaire----------*/
+
 .Sommaire {
     z-index: 9;
     position: fixed;
@@ -1669,6 +1765,8 @@ figcaption .figure-detail .Nom a {
     color: #5b626d;
     opacity: 1;
 }
+
+
 
 .ScrollHaut {
     position: fixed;
