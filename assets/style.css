@@ -1056,7 +1056,6 @@ h4 .Titre {
     text-shadow: 0 1px 0 #FFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
-    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
     border-radius: 3px;
     margin: 0 3px 0 0;
     width: auto;
@@ -1064,6 +1063,7 @@ h4 .Titre {
 
 a.fancyd_list {
     margin-left: 2px;
+    font-size: 13px;
     box-shadow: none;
     background: #fafafa;
     font-weight: normal;
@@ -1318,6 +1318,13 @@ a.fancyd_list {
     background-size: 25px 86px;
 }
 
+.Provenance .after {
+    padding: 0 15px;
+    overflow: hidden;
+    height: 67px;
+}
+
+/*----------------------Fin de PRovenance - Debut de More Info---------------------*/
 .MoreInfo li {
     float: none;
     padding: 0;
@@ -1563,7 +1570,6 @@ figcaption .figure-detail .Nom a {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
     background: #F4F4F5;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#F6F7F8');
     border-radius: 3px;
     margin: 0 3px 0 0;
     width: auto;
