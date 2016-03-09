@@ -1,3 +1,4 @@
+//Fonction pour faire apparaître le menu//
 var hauteur = 400;
 $(function(){
    $(window).scroll(function () {
@@ -9,6 +10,7 @@ $(function(){
    });
  });
 
+//Fonction pour faire remonter la page en haut//
 $(document).ready( function () {
     
     $('body').append('<div id="scrollToTop" title="Retour en haut">&nbsp;</div>');
@@ -17,8 +19,16 @@ $(document).ready( function () {
     $('#scrollToTop').click( function() {
         $('html,body').animate({scrollTop: 0}, 'slow');
     });
+
+//Fonction pour changer le nom a sa selection//
+    $('.trick-select select').on('change',function(elt){
+      var value = $('option:selected', this).text()
+      parent = $(this).parent('.trick-select')
+      $('.selectBox-label',parent).html(value)
+    })
 });
 
+//Fonction pour faire apparaître le bouton//
 $(window).scroll(function() {
     
     if ( $(window).scrollTop() == 0 )

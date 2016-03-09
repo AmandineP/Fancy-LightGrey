@@ -454,7 +454,7 @@ button {
     margin-bottom: 2px;
 }
 
-.ListeGauche .Store a:hover {
+.ListeGauche .Store .TitreMenuGauche:hover {
     color: #35393f;
     transition: 0.15s ease-in-out;
 }
