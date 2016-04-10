@@ -525,13 +525,6 @@ button {
 
 /*-----------------------------Fin du Menu Burger-----------------------------*/
 
-.trick {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    -webkit-transition: opacity 0.15s ease-in-out;
-}
 
 .Loupe:before {
     content: '';
@@ -562,7 +555,7 @@ button {
 .Recherche {
   left: 0;
   margin: 0;
-  width: 100%;
+  width: 970px;
   position: absolute;
   top: 100%;
   height: auto;
