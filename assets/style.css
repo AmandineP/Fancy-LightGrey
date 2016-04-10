@@ -553,20 +553,11 @@ button {
 }
 
 .Recherche {
-  left: 0;
-  margin: 0;
   width: 970px;
   position: absolute;
   top: 100%;
-  height: auto;
-  border: 0;
-  padding: 0;
   transition: 0.2s;
   z-index:1;
-  float: left;
-  border-left: 1px solid #363B45;
-  line-height: 42px;
-  text-align: left;
 }
 
 .Fond {
