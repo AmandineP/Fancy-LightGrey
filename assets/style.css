@@ -546,6 +546,7 @@ button {
     opacity: 0.85;
     transition: 0.15s ease-in-out;
 }
+
 /*
 .Recherche {
   opacity: 1;
@@ -561,8 +562,6 @@ button {
 }
 
 .Fond {
-  visibility: visible;
-  opacity: 0.2;
   background: #303339;
   transition: 0.2s;
   left: 0;
