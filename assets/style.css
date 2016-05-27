@@ -546,7 +546,7 @@ button {
     opacity: 0.85;
     transition: 0.15s ease-in-out;
 }
-
+/*
 .Recherche {
   opacity: 1;
   visibility: visible;
@@ -603,6 +603,7 @@ button {
 fieldset .BtnSubmit {
   display: none;
 }
+*/
 
 
 /*-----------------------------Fin de Loupe-----------------------------*/
